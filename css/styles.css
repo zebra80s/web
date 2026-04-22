@@ -1,0 +1,406 @@
+h1 {
+  font-family: 'Open Sans', cursive;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-family: 'Open Sans', cursive;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-family: 'Open Sans', cursive;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 15.4px;
+  letter-spacing: 2px;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.9); /* Black background with opacity */
+  z-index: 999; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+#poster{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+
+p, li, div, button, input, textarea {
+  font-family: 'Open Sans', cursive;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+blockquote {
+  font-family: 'Open Sans', cursive;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+pre {
+  font-family: 'Open Sans', cursive;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+  letter-spacing: 2px;
+}
+
+.icon {
+  width: 35%;
+  margin: 0 auto;
+  max-width: 30px;
+}
+
+sup {
+  color: red;
+}
+
+/*--- contact form ---*/
+.hidden{
+  display: none;
+  visibility: hidden;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+
+}
+
+.bio {
+  margin-bottom: 30px;
+}
+
+/*--- spacing between rows for photo gallery ---*/
+div.row>div>div.row {
+  margin-bottom: 15px;
+}
+
+.carousel {
+  border-radius: 5px;
+  overflow: hidden;
+  /*border: solid 10px white;*/
+}
+
+.hero {
+  margin-top: 80px;
+}
+
+ul>li {
+  list-style-type: none;
+}
+
+/*
+.carousel-caption-block{
+position: relative;
+background-color: rgba(221,221,221,.5);
+display: block;
+
+max-height:20%;
+padding: 10px;
+
+}
+*/
+
+.carousel-caption {
+  background: rgba(255, 255, 255, .8);
+  right: 0%;
+  left: 0%;
+}
+.carousel-caption p{
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.navbar-inverse {
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+  background: #1a237e;
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover {
+  background: #1a237e;
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav>.active>a:focus {
+  background: #1a237e;
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav>.open>a {
+  background: #1a237e;
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav>.open>a:hover {
+  background: #1a237e;
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav>.open>a:focus {
+  background: #1a237e;
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+  background-color: #303f9f;
+  color: #eeeeee;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+  color: #000000;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu {
+  background-color: #303f9f;
+  color: #eeeeee;
+}
+
+/*
+.carousel {
+  background: #1a237e;
+}
+.carousel .item {
+  height: 400px;
+}
+.carousel .item img {
+  left: 0;
+  min-height: 400px;
+  position: absolute;
+  top: 0;
+}
+*/
+
+/* video modal css */
+.modal-body {
+  /*padding: 0px !important;*/
+  position:relative;
+  padding:0px;
+}
+/*
+.vertical-alignment-helper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+*/
+.vertical-align-center {
+  /*To center vertically*/
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-content {
+  /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+  /*width: inherit;*/
+/*  height: inherit;*/
+  /* To center horizontally */
+  /*margin: 0 auto;*/
+  border: none;
+}
+
+.modal-dialog {
+
+  max-width: 1000px;
+  margin: 30px auto;
+width:95%;
+}
+
+
+/* code to help with vertically aligning modal */
+.modal {
+text-align: center;
+padding: 0 !important;
+}
+
+.modal:before {
+content: '';
+display: inline-block;
+height: 100%;
+vertical-align: middle;
+margin-right: -4px;
+}
+
+.modal-dialog {
+display: inline-block;
+text-align: left;
+vertical-align: middle;
+
+}
+
+/* button background for youtube*/
+.btn-yt{
+  background: rgba(64,58,58,0.0);
+  border: 0;
+}
+.btn-yt:link{
+  border: 0 !important;
+}
+.bt-yt:visited{
+  border: none !important;
+}
+.btn-yt:hover{
+  background: #ffffff !important;
+  border: none !important;
+}
+.btn-yt:active{
+  background: none !important;
+  border: none !important;
+}
+.btn-yt:focus{
+  border: none !important;
+}
+
+.close {
+  position: absolute;
+  right: -30px;
+  top: 0;
+  z-index: 999;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+  opacity: 1;
+}
+
+.fa {
+  vertical-align: middle;
+  line-height: 14px;
+}
+
+.fa-youtube-play {
+  color: red;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 50px;
+  padding:0;
+  color: #ffffff;
+  height: 50px;
+  background: #000000;
+  text-align: center;
+  line-height: 50px;
+}
+
+.navbar-brand img {
+  position: absolute;
+  top: 30%;
+  transform: rotate(-10deg);
+  z-index: -99;
+}
+
+.divider {
+  /*background: url("../images/divider-sm.png");*/
+  border-bottom: solid 2px orange;
+  width: 60%;
+  margin: 25px auto;
+}
+
+fieldset {
+  margin: 50px 15% 0;
+  border: solid 2px orange;
+  padding: 15px 0;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+}
+
+legend {
+  /*display: inline-block;*/
+  width: 30%;
+  font-family: 'Open Sans', cursive;
+  font-size: 2em;
+  text-align: center;
+  padding: 0 10px;
+  letter-spacing: 2px;
+}
+
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+
+     /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+      .navbar-brand img {
+        width: 75px;
+        height: auto;
+        top: 20%;
+      }
+        }
+
+
+
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+      legend {
+        font-size: 1.25em;
+       }
+
+    }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (max-width : 320px) {
+
+    }
